@@ -1,0 +1,66 @@
+ID    | TIMESTAMP               | LEVEL    | (UID:)HOST:PORT           | MESSAGE
+1     | 2024-03-03 11:47:09,251 | DEBUG    |                           | Scrapli factory initialized
+2     | 2024-03-03 11:47:09,252 | INFO     |                           | Driver '<class 'scrapli.driver.core.cisco_iosxe.sync_driver.IOSXEDriver'>' selected from scrapli core drivers
+3     | 2024-03-03 11:47:09,252 | DEBUG    | 172.20.128.89:22          | load core transport requested
+4     | 2024-03-03 11:47:09,364 | DEBUG    | 172.20.128.89:22          | core transport 'system' loaded successfully
+5     | 2024-03-03 11:47:09,365 | DEBUG    | 172.20.128.89:22          | generating combined network comms prompt pattern
+6     | 2024-03-03 11:47:09,365 | DEBUG    | 172.20.128.89:22          | setting 'comms_prompt_pattern' value to '(^[\w.\-@/:]{1,63}>$)|(^[\w.\-@/:]{1,63}#$)|(^[\w.\-@/:]{1,63}\([\w.\-@/:+]{0,32}\)#$)|(^([\w.\-@/+>:]+\(tcl\)[>#]|\+>)$)'
+7     | 2024-03-03 11:47:09,366 | INFO     | 172.20.128.89:22          | opening connection to '172.20.128.89' on port '22'
+8     | 2024-03-03 11:47:09,366 | DEBUG    | 172.20.128.89:22          | opening transport connection to '172.20.128.89' on port '22'
+9     | 2024-03-03 11:47:09,366 | DEBUG    | 172.20.128.89:22          | created transport 'open_cmd': '['ssh', '172.20.128.89', '-p', '22', '-o', 'ConnectTimeout=15', '-o', 'ServerAliveInterval=30', '-l', 'cisco', '-o', 'StrictHostKeyChecking=no', '-o', 'UserKnownHostsFile=/dev/null', '-F', '/dev/null']'
+10    | 2024-03-03 11:47:09,451 | DEBUG    | 172.20.128.89:22          | transport connection to '172.20.128.89' on port '22' opened successfully
+11    | 2024-03-03 11:47:09,452 | DEBUG    | 172.20.128.89:22          | attempting in channel ssh authentication
+12    | 2024-03-03 11:47:09,888 | DEBUG    | 172.20.128.89:22          | read : b"Warning: Permanently added '172.20.128.89' (RSA) to the list of known hosts.\nPassword: "
+13    | 2024-03-03 11:47:12,190 | DEBUG    | 172.20.128.89:22          | write: REDACTED
+14    | 2024-03-03 11:47:12,191 | DEBUG    | 172.20.128.89:22          | write: '\n'
+15    | 2024-03-03 11:47:12,192 | DEBUG    | 172.20.128.89:22          | read : b'\n\n\n\nLEAF1#'
+16    | 2024-03-03 11:47:12,302 | DEBUG    | 172.20.128.89:22          | write: '\n'
+17    | 2024-03-03 11:47:12,339 | DEBUG    | 172.20.128.89:22          | read : b'\nLEAF1#'
+18    | 2024-03-03 11:47:12,339 | INFO     | 172.20.128.89:22          | attempting to acquire 'privilege_exec' privilege level
+19    | 2024-03-03 11:47:12,341 | DEBUG    | 172.20.128.89:22          | determined current privilege level is one of '['privilege_exec']'
+20    | 2024-03-03 11:47:12,341 | DEBUG    | 172.20.128.89:22          | determined current privilege level is target privilege level, no action needed
+21    | 2024-03-03 11:47:12,342 | INFO     | 172.20.128.89:22          | sending channel input: terminal length 0; strip_prompt: True; eager: False
+22    | 2024-03-03 11:47:12,342 | DEBUG    | 172.20.128.89:22          | write: 'terminal length 0'
+23    | 2024-03-03 11:47:12,378 | DEBUG    | 172.20.128.89:22          | read : b'terminal length 0'
+24    | 2024-03-03 11:47:12,401 | DEBUG    | 172.20.128.89:22          | write: '\n'
+25    | 2024-03-03 11:47:12,439 | DEBUG    | 172.20.128.89:22          | read : b'\nLEAF1#'
+26    | 2024-03-03 11:47:12,440 | INFO     | 172.20.128.89:22          | sending channel input: terminal width 512; strip_prompt: True; eager: False
+27    | 2024-03-03 11:47:12,441 | DEBUG    | 172.20.128.89:22          | write: 'terminal width 512'
+28    | 2024-03-03 11:47:12,482 | DEBUG    | 172.20.128.89:22          | read : b'terminal width 512'
+29    | 2024-03-03 11:47:12,496 | DEBUG    | 172.20.128.89:22          | write: '\n'
+30    | 2024-03-03 11:47:12,534 | DEBUG    | 172.20.128.89:22          | read : b'\nLEAF1#'
+31    | 2024-03-03 11:47:12,534 | INFO     | 172.20.128.89:22          | connection to '172.20.128.89' on port '22' opened successfully
+32    | 2024-03-03 11:47:12,535 | INFO     | 172.20.128.89:22          | sending channel input: show mac address-table; strip_prompt: True; eager: False
+33    | 2024-03-03 11:47:12,536 | DEBUG    | 172.20.128.89:22          | write: 'show mac address-table'
+34    | 2024-03-03 11:47:12,588 | DEBUG    | 172.20.128.89:22          | read : b'show mac address-table'
+35    | 2024-03-03 11:47:12,633 | DEBUG    | 172.20.128.89:22          | write: '\n'
+36    | 2024-03-03 11:47:12,680 | DEBUG    | 172.20.128.89:22          | read : b'\n          Mac Address Table\n-------------------------------------------\n\nVlan    Mac Address       Type        Ports\n----    -----------       --------    -----\n All    0100.0ccc.cccc    STATIC      CPU\n All    0100.0ccc.cccd    STATIC      CPU\n All    0180.c200.0000    STATIC      CPU\n All    0180.c200.0001    STATIC      CPU\n All    0180.c200.0002    STATIC      CPU\n All    0180.c200.0003    STATIC      CPU\n All    0180.c200.0004    STATIC      CPU\n All    0180.c200.0005    STATIC      CPU\n All    0180.c200.0006    STATIC      CPU\n All    0180.c200.0007    STATIC      CPU\n All    0180.c200.0008    STATIC      CPU\n All    0180.c200.0009    STATIC      CPU\n All    0180.c200.000a    STATIC      CPU\n All    0180.c200.000b    STATIC      CPU\n All    0180.c200.000c    STATIC      CPU\n All    0180.c200.000d    STATIC      CPU\n All    0180.c200.000e    STATIC      CPU\n All    0180.c200.000f    STATIC      CPU\n All    0180.c200.0010    STATIC      CPU\n All    0180.c200.0021    STATIC      CPU\n All    ffff.ffff.ffff    STATIC      CPU\n   1    5254.0018.d804    STATIC      Vl1 \n 101    5254.0018.d8fe    STATIC      Vl101 \n 102    5254.0018.d80a    STATIC      Vl102 \n 105    5254.0001.8dde    DYNAMIC     Gi1/0/3\n 105    5254.0018.d836    STATIC      Vl105 \nTotal Mac Addresses for this criterion: 26\nLEAF1#'
+37    | 2024-03-03 11:47:12,680 | INFO     | 172.20.128.89:22          | closing connection to '172.20.128.89' on port '22'
+38    | 2024-03-03 11:47:12,681 | DEBUG    | 172.20.128.89:22          | write: '\n'
+39    | 2024-03-03 11:47:12,719 | DEBUG    | 172.20.128.89:22          | read : b'\nLEAF1#'
+40    | 2024-03-03 11:47:12,719 | INFO     | 172.20.128.89:22          | attempting to acquire 'privilege_exec' privilege level
+41    | 2024-03-03 11:47:12,720 | DEBUG    | 172.20.128.89:22          | determined current privilege level is target privilege level, no action needed
+42    | 2024-03-03 11:47:12,720 | DEBUG    | 172.20.128.89:22          | write: 'exit'
+43    | 2024-03-03 11:47:12,721 | DEBUG    | 172.20.128.89:22          | write: '\n'
+44    | 2024-03-03 11:47:12,721 | DEBUG    | 172.20.128.89:22          | closing transport connection to '172.20.128.89' on port '22'
+45    | 2024-03-03 11:47:12,822 | DEBUG    | 172.20.128.89:22          | transport connection to '172.20.128.89' on port '22' closed successfully
+46    | 2024-03-03 11:47:12,822 | INFO     | 172.20.128.89:22          | connection to '172.20.128.89' on port '22' closed successfully
+47    | 2024-03-03 11:47:12,837 | DEBUG    |                           | Scrapli factory initialized
+48    | 2024-03-03 11:47:12,838 | INFO     |                           | Driver '<class 'scrapli.driver.core.cisco_iosxe.sync_driver.IOSXEDriver'>' selected from scrapli core drivers
+49    | 2024-03-03 11:47:12,838 | DEBUG    | 172.20.128.94:22          | load core transport requested
+50    | 2024-03-03 11:47:12,839 | DEBUG    | 172.20.128.94:22          | core transport 'system' loaded successfully
+51    | 2024-03-03 11:47:12,839 | DEBUG    | 172.20.128.94:22          | generating combined network comms prompt pattern
+52    | 2024-03-03 11:47:12,840 | DEBUG    | 172.20.128.94:22          | setting 'comms_prompt_pattern' value to '(^[\w.\-@/:]{1,63}>$)|(^[\w.\-@/:]{1,63}#$)|(^[\w.\-@/:]{1,63}\([\w.\-@/:+]{0,32}\)#$)|(^([\w.\-@/+>:]+\(tcl\)[>#]|\+>)$)'
+53    | 2024-03-03 11:47:12,840 | INFO     | 172.20.128.94:22          | opening connection to '172.20.128.94' on port '22'
+54    | 2024-03-03 11:47:12,840 | DEBUG    | 172.20.128.94:22          | opening transport connection to '172.20.128.94' on port '22'
+55    | 2024-03-03 11:47:12,841 | DEBUG    | 172.20.128.94:22          | created transport 'open_cmd': '['ssh', '172.20.128.94', '-p', '22', '-o', 'ConnectTimeout=15', '-o', 'ServerAliveInterval=30', '-l', 'cisco', '-o', 'StrictHostKeyChecking=no', '-o', 'UserKnownHostsFile=/dev/null', '-F', '/dev/null']'
+56    | 2024-03-03 11:47:12,931 | DEBUG    | 172.20.128.94:22          | transport connection to '172.20.128.94' on port '22' opened successfully
+57    | 2024-03-03 11:47:12,932 | DEBUG    | 172.20.128.94:22          | attempting in channel ssh authentication
+58    | 2024-03-03 11:47:13,300 | DEBUG    | 172.20.128.94:22          | read : b"Warning: Permanently added '172.20.128.94' (RSA) to the list of known hosts.\nUser Access Verification\nPassword: "
+59    | 2024-03-03 11:47:13,626 | DEBUG    | 172.20.128.94:22          | write: REDACTED
+60    | 2024-03-03 11:47:13,627 | DEBUG    | 172.20.128.94:22          | write: '\n'
+61    | 2024-03-03 11:47:13,628 | DEBUG    | 172.20.128.94:22          | read : b'\n\nCisco NX-OS Software\nCopyright (c) 2002-2022, Cisco Systems, Inc. All rights reserved.\nNexus 9000v software ("Nexus 9000v Software") and related documentation,\nfiles or other reference materials ("Documentation") are\nthe proprietary property and confidential information of Cisco\nSystems, Inc. ("Cisco") and are protected, without limitation,\npursuant to United States and International copyright and trademark\nlaws in the applicable jurisdiction which provide civil and criminal\npenalties for copying or distribution without Cisco\'s authorization.\n\nAny use or disclosure, in whole or in part, of the Nexus 9000v Software\nor Documentation to any third party for any purposes is expressly\nprohibited except as otherwise authorized by Cisco in writing.\nThe copyrights to certain works contained herein are owned by other\nthird parties and are used and distributed under license. Some parts\nof this software may be covered under the GNU Public License or the\nGNU Lesser General Public License. A copy of each such license is\navailable at\nhttp://www.gnu.org/licenses/gpl.html and\nhttp://www.gnu.org/licenses/lgpl.html\n***************************************************************************\n*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *\n*  and NX-OS education. Any use or disclosure, in whole or in part of     *\n*  the Nexus 9000v Software or Documentation to any third party for any   *\n*  purposes is expressly prohibited except as otherwise authorized by     *\n*  Cisco in writing.                                                      *\n***************************************************************************\nspine2# '
+62    | 2024-03-03 11:47:42,932 | CRITICAL | 172.20.128.94:22          | operation timed out, closing connection
+63    | 2024-03-03 11:47:42,933 | DEBUG    | 172.20.128.94:22          | closing transport connection to '172.20.128.94' on port '22'
+64    | 2024-03-03 11:47:43,034 | CRITICAL | 172.20.128.94:22          | encountered EOF reading from transport; typically means the device closed the connection
+65    | 2024-03-03 11:47:43,134 | DEBUG    | 172.20.128.94:22          | transport connection to '172.20.128.94' on port '22' closed successfully

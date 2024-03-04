@@ -1,0 +1,41 @@
+DeviceIP,INTERFACE,SWITCHPORT,SWITCHPORT_NEGOTIATION,MODE,ADMIN_MODE,ACCESS_VLAN,NATIVE_VLAN,VOICE_VLAN,TRUNKING_VLANS,serial,PORT,STATUS,DESCRIPTION
+172.20.128.89,Gi1/0/3,Enabled,On,trunk,dynamic auto,1,1,none,['ALL'],abc,Gi1/0/3,up,
+172.20.128.89,Gi1/0/4,Enabled,On,static access,dynamic auto,1,1,none,['ALL'],abc,Gi1/0/4,up,
+172.20.128.89,Gi1/0/5,Enabled,On,static access,dynamic auto,1,1,none,['ALL'],abc,Gi1/0/5,up,
+172.20.128.89,Gi1/0/6,Enabled,On,down,dynamic auto,1,1,none,['ALL'],abc,Gi1/0/6,admin down,
+172.20.128.89,Gi1/0/7,Enabled,On,static access,dynamic auto,1,1,none,['ALL'],abc,Gi1/0/7,up,
+172.20.128.89,Gi1/0/8,Enabled,On,static access,dynamic auto,20,1,21,['ALL'],abc,Gi1/0/8,up,
+n/a,Vl1,up,
+n/a,Vl101,up,
+n/a,Vl102,up,
+n/a,Vl105,up,
+n/a,Gi0/0,up,
+n/a,Gi1/0/1,up,
+n/a,Gi1/0/2,up,
+n/a,nv1,up,
+n/a,Lo0,up,
+n/a,Lo101,up,
+n/a,Tu0,up,
+n/a,Tu1,up,Pim Register Tunnel (Encap) for RP 10.10.1.111
+n/a,Tu2,up,Pim Register Tunnel (Decap) for RP 10.9.21.1 on VRF VRF1
+n/a,Tu3,up,Pim Register Tunnel (Encap) for RP 10.9.21.1 on VRF VRF1
+172.20.128.94,Gi1/0/3,Enabled,On,trunk,trunk,1,1,none,['ALL'],abc,Gi1/0/3,up,
+172.20.128.94,Gi1/0/4,Enabled,On,static access,dynamic auto,1,1,none,['ALL'],abc,Gi1/0/4,up,
+172.20.128.94,Gi1/0/5,Enabled,On,static access,dynamic auto,1,1,none,['ALL'],abc,Gi1/0/5,up,
+172.20.128.94,Gi1/0/6,Enabled,On,static access,dynamic auto,1,1,none,['ALL'],abc,Gi1/0/6,up,
+172.20.128.94,Gi1/0/7,Enabled,On,static access,dynamic auto,1,1,none,['ALL'],abc,Gi1/0/7,up,
+172.20.128.94,Gi1/0/8,Enabled,On,static access,dynamic auto,1,1,none,['ALL'],abc,Gi1/0/8,up,
+n/a,Vl1,up,
+n/a,Vl101,up,
+n/a,Vl102,up,
+n/a,Vl106,up,
+n/a,Gi0/0,up,
+n/a,Gi1/0/1,up,
+n/a,Gi1/0/2,up,
+n/a,nv1,up,
+n/a,Lo0,up,
+n/a,Lo101,up,
+n/a,Lo102,up,test_only
+n/a,Tu0,up,
+n/a,Tu1,up,Pim Register Tunnel (Encap) for RP 10.9.21.1 on VRF VRF1
+n/a,Tu2,up,Pim Register Tunnel (Encap) for RP 10.10.1.111
